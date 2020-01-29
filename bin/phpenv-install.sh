@@ -55,7 +55,7 @@ update_phpenv() {
 
 clone_rbenv() {
     local install_location="$1"
-    git clone "$RBENV_REPO" "$install_location" > /dev/null
+    git clone "$RBENV_REPO" -b v1.1.2 "$install_location" > /dev/null
 }
 
 if [ -z "$PHPENV_ROOT" ]; then
